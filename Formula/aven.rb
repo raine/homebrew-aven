@@ -7,20 +7,20 @@ class Aven < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/raine/aven/releases/download/v0.1.0/aven-darwin-arm64.tar.gz"
-      sha256 "0c975b83d7c8ca037284f5f5396d4c50318b87f4212a4fee8b9560a6fd6b220f"
+      sha256 "2af624ee120a49f3ff93917aadd851dbbe729acb54d4fcdaac1fd4a74ba87f26"
     else
       url "https://github.com/raine/aven/releases/download/v0.1.0/aven-darwin-amd64.tar.gz"
-      sha256 "0dbf8e0fd46526331b263903a9fceb83ddf8c1729b07f72d431520d2aa03cd7c"
+      sha256 "394b9cff81eba5d3cc40efd0aed0eb13c94c9acf5995c78a7ed61c12027edf04"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/raine/aven/releases/download/v0.1.0/aven-linux-arm64.tar.gz"
-      sha256 "f5c4f95e39bfeed78607874628daf0e707285561e5adccdb5a2abf7716af874d"
+      sha256 "c451d7f0b3e43ee9d3920209110b094701c9ba67d22d7e0c247bd29b430eb65a"
     else
       url "https://github.com/raine/aven/releases/download/v0.1.0/aven-linux-amd64.tar.gz"
-      sha256 "44f1e2d1b1db75f5c4f4fb1270a2d9239483fdf62b4b1f647b5834fffeda5456"
+      sha256 "26218e9533bafc1281e7a3f0491149574cc2a978f57c705cfe7e274190bdd95c"
     end
   end
 
