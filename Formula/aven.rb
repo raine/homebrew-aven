@@ -1,26 +1,26 @@
 class Aven < Formula
   desc "Local-first task manager CLI and sync server"
   homepage "https://github.com/raine/aven"
-  version "0.1.47"
+  version "0.1.48"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/raine/aven/releases/download/v0.1.47/aven-darwin-arm64.tar.gz"
-      sha256 "46da6acc8e7e1b054e4494726799ea94571b4d306424265199579ca87ad31406"
+      url "https://github.com/raine/aven/releases/download/v0.1.48/aven-darwin-arm64.tar.gz"
+      sha256 "06747f1f4b90e0167490064118e3bfd9f16c5264bd165412a627de2ddffb95ed"
     else
-      url "https://github.com/raine/aven/releases/download/v0.1.47/aven-darwin-amd64.tar.gz"
-      sha256 "ab951009a3395cf05926176bc92d9f5035190e09eb5929e54ca86313ddac9fa1"
+      url "https://github.com/raine/aven/releases/download/v0.1.48/aven-darwin-amd64.tar.gz"
+      sha256 "2b7c9c06f699caf4a8bfd0fd0aeffb9a0289b7c5acf9203c217be57013a0de86"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raine/aven/releases/download/v0.1.47/aven-linux-arm64.tar.gz"
-      sha256 "be494c31279824206b60d15d396033c64866afcc966f48e15b9acb0f5fb63538"
+      url "https://github.com/raine/aven/releases/download/v0.1.48/aven-linux-arm64.tar.gz"
+      sha256 "3d085bdc80910764d03c31db911245c75d321d6a2bda08659057f23021c87e19"
     else
-      url "https://github.com/raine/aven/releases/download/v0.1.47/aven-linux-amd64.tar.gz"
-      sha256 "b5d643d1adefcf541fbebffd49ec5289ecd4964e540f6d93cb112603e9eb576d"
+      url "https://github.com/raine/aven/releases/download/v0.1.48/aven-linux-amd64.tar.gz"
+      sha256 "c087532b478fbe2d0fbd2699f47d933688fdde1706eb7964c778ae2deef80f97"
     end
   end
 
